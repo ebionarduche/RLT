@@ -2,7 +2,7 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import NotFound from '../pages/NotFound';
 
-describe('testando se contém as informações sobre a Pokédex', () => {
+describe('4. Teste o componente <NotFound.js />', () => {
   test('Teste se a página contém um heading h2 com o texto Page requested not found', () => {
     render(<NotFound />);
     const NotFoundMessage = screen.getByRole('heading', { name: /Page requested not found/i });

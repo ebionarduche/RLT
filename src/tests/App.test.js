@@ -3,7 +3,7 @@ import { screen } from '@testing-library/react';
 import App from '../App';
 import renderWithRouter from '../renderWithRouter';
 
-describe('testa se o topo aplicação contém links fixos de navegação', () => {
+describe('1. Teste o componente <App.js />', () => {
   it('Os links devem possuir os textos específicos', () => {
     renderWithRouter(<App />);
     const linkHome = screen.getByRole('link', { name: /home/i });
