@@ -34,8 +34,8 @@ describe('5. Teste o componente <Pokedex.js />', () => {
     const btnFire = screen.getByRole('button', { name: /fire/i });
     const btnBug = screen.getByRole('button', { name: /bug/i });
     const btnNormal = screen.getByRole('button', { name: /normal/i });
-
     const btnAll = screen.getByRole('button', { name: /all/i });
+
     const pikachu = screen.getByText(/pikachu/i);
     expect(pikachu).toBeInTheDocument();
 
